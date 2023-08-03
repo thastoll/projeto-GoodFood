@@ -1,0 +1,53 @@
+.nav{
+    background: @white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    ul{
+        display: inline-flex;
+        li{
+            margin: 0 35px 0 35px;
+            list-style: none;
+            position: relative;
+            .effect{
+                position: absolute;
+                z-index: 2;
+                width: 100%;
+                background: @black;
+                height: 0;
+                .transition;
+            }
+            .itemHome{
+                display: block;
+                text-decoration: none;
+                background: @black;
+                padding: 15px 0;
+                font-weight: 700;
+                span{
+                    color: @white;
+                    padding: 20px 20px;
+                }
+           }
+           .itemNav{
+                color: @black;
+                display: block;
+                text-decoration: none;
+                padding: 15px 20px;
+                font-weight: 700;
+                position: relative;
+                z-index: 3;
+                .transition;
+            }
+            &:hover{
+                .effect{
+                    height: 50px;
+                }
+                .itemNav{
+                    color: @white;
+                }
+            }
+        }
+    }
+}
+
+
